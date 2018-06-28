@@ -18,3 +18,25 @@ body {
     background: #223047;
     color: white;
 }
+
+.navBar .link hover,
+.navBar .link active {
+    color: #223047;
+    background: white;
+}
+
+.navBar .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.navBar a {
+    text-decoration: none;
+}
+
+.navBar .toggle {
+    padding: 1em;
+    color: black;
+}
