@@ -10,6 +10,11 @@ body {
     display: none;
 }
 
+.navBar .toggle,
+.navBar .brand {
+    display: inline-block;
+}
+
 .navBar .link {
     display: block;
     text-align: center;
@@ -19,8 +24,8 @@ body {
     color: white;
 }
 
-.navBar .link hover,
-.navBar .link active {
+.navBar .link:hover,
+.navBar .link:active {
     color: #223047;
     background: white;
 }
@@ -39,4 +44,47 @@ body {
 .navBar .toggle {
     padding: 1em;
     color: black;
+}
+
+@media(min-width: 48em) {
+    .navBar {
+        display: flex;
+    }
+
+    .navBar div {
+        display: flex;
+    }
+
+    .navBar .left,
+    .navBar .right {
+        display: flex;
+        flex: 1;
+    }
+
+    .navBar .right {
+        justify-content: flex-end;
+    }
+
+    .navBar .toggle {
+        display: none;
+    }
+
+    .navBar .link {
+        width: auto;
+    }
+}
+
+@media( max-width: 48em) {
+    .navBar.active .toggle {
+        background: #223047;
+        color: white;
+    }
+
+    .navBar .brand {
+        text-align: left;
+    }
+
+    .navBar.active div {
+        display: block;
+    }
 }
