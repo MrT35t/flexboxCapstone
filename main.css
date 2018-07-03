@@ -46,6 +46,18 @@ body {
     color: black;
 }
 
+.pix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pix img {
+    width:60%;
+    height: auto;
+}
+
 @media(min-width: 48em) {
     .navBar {
         display: flex;
